@@ -1,0 +1,15 @@
+$myColor:salmon;
+
+header {
+    background-color: lightblue;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        color: $myColor;
+    }
+    
+}
+
