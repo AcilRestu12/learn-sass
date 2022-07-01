@@ -1,0 +1,65 @@
+// .main {
+//     background-color: lightblue;
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     .main-paragraph {
+//         font-size: 1.4em;
+//     }
+
+    
+// }
+
+
+
+// .main, footer {
+//     h1, p {
+//         letter-spacing: 2px;
+//     }
+// }
+
+
+
+// ----------| & {Parent Selector) |----------
+
+.main {
+    .container & {      // % mengacu ke .main
+        background-color: lightblue;
+        transition: .5s;
+    }
+    .main-heading {
+        font-size: 2em;
+    }
+
+    &:hover {           // & mengacu ke .main
+        background-color: salmon;
+    }
+}
+
+
+
+// & sebagai pengganti nama parent
+
+.main {
+    & &-heading {       // & = .main
+        font-size: 2em;
+    }
+    & &-paragraph {     // & = .main
+        font-size: 1.4em;
+    }
+}
+
+.footer { 
+    #{&}-heading {       // #{&} = .footer .footer
+        font-size: 2em;
+    }
+    #{&}-paragraph {     // #{&} = .footer .footer
+        font-size: 1.4em;
+    }
+}
+
+
+
+
