@@ -1,0 +1,65 @@
+// ----------| CSS Variable |----------
+
+// :root {
+//     --primary-color: #f4f1de;
+//     --secondary-color: #f2cc8f;
+//     --text-color: #e07a5f;
+// }
+
+// body {
+    //     background-color: var(--primary-color);
+// }
+    
+// h1 {
+    //     color: var(--text-color);
+// }
+
+// p {
+    //     color: var(--text-color);
+// }
+
+
+
+// ----------| SASS Variable |----------
+
+// $secondary-color: #f2cc8f;      // Variable global
+// $text-color: #e07a5f;           // Variable global
+// $fourth-color: green;           // Variable global
+
+// body {
+//     $primary-color: #f4f1de;    // Variable local
+//     $third-color: red !global;  // Variable local menjadi global
+//     $fourth-color: yellow;      // Variable local yang berbeda
+//     background-color: $fourth-color;
+// }
+
+// h1 {
+//     color: $fourth-color;       // - sama dengan _
+// }
+
+// p {
+//     color: $text_color;         // - sama dengan _
+// }
+
+
+
+// ----------| Map |----------
+
+// $alert-danger: red;
+// $alert-success: green;
+// $alert-warning: orange;
+
+$alert: (
+    'danger' : red,
+    'success' : green,
+    'warning' : orange,
+);
+
+h1 {
+    color: map-get($alert, 'success');
+}
+
+
+
+
+
