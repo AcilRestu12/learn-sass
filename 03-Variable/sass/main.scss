@@ -61,5 +61,23 @@ h1 {
 
 
 
+/* 
+    NB :
+        - :root { <variabel css yg dapat diakses ke semua element>  }
+
+        - --<nama variable di css> : <nilai variable>;
+        - var(<nama variable css yg ingin dipanggil>);
+
+        - $<nama variabel di sass> : <nilai variable>;
+
+        - Array di sass :
+            - $<nama variable array> : ( ‘<isi variable 1>’ : <nilai variable 1>);
+        - Memanggil array sass :
+            - map-get($<nama array>, <nama isi variable>);
+
+
+*/
+
+
 
 

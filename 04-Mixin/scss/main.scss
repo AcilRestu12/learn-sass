@@ -1,0 +1,81 @@
+// ----------| Simple Mixin |----------
+
+@mixin inline-list {            // Membuat mixin inline-list
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.header ul {
+    @include inline-list();     // Memanggil mixin inline-list
+    li {
+        background-color: black;
+        padding: .7em;
+        a {
+            color: white;
+        }
+    }
+}
+
+.footer ul {
+    @include inline-list();     // Memanggil mixin inline-list
+    li {
+        padding: .4em;
+        background-color: salmon;
+
+        a {
+            color: white;
+        }
+        
+    }
+}
+
+
+
+// ----------| Arguments pada Mixin |----------
+
+@mixin flex-box($direction: row, $space: center) {      // Membuat mixin flex-box
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.container {
+    @include flex-box(row-reverse, space-evenly);       // Memanggil mixin flex-box
+    width: 600px;
+    height: 400px;
+    background-color: #eaeaea;
+
+    .box {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(200, 136, 57);
+        text-align: center;
+        line-height: 60px;
+    }
+    
+}
+
+
+
+/* 
+    NB :
+        - @mixin    ~> Berfungsi untuk membuat semacam function yang berisi kumpulan style.
+        - @mixin <nama mixin>(<parameter>) { <kumpulan style> }
+
+        - @include  ~> Berfungsi untuk memanggil mixin.
+        - @include <nama mixin>(<parameter>);
+    
+
+*/
+
+
+
+
+
+
