@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header ul {
   margin: 0;
   padding: 0;
@@ -54,6 +55,12 @@
 
         - @include  ~> Berfungsi untuk memanggil mixin.
         - @include <nama mixin>(<parameter>);
+
+        - @import   ~> Berfungsi untuk mengimport file partial dari sass.
+        - @import ‘<nama file partial>’;
+
+        - @use      ~> Berfungsi untuk mengimport file partial dari sass (recommended).
+        - @use ‘<nama file partial>’ as <nama alias>;
 
 
 *//*# sourceMappingURL=main.css.map */

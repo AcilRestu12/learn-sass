@@ -1,5 +1,0 @@
-- @mixin    ~> Berfungsi untuk membuat semacam function yang berisi kumpulan style.
-- @mixin <nama mixin>(<parameter>) { <kumpulan style> }
-
-- @include  ~> Berfungsi untuk memanggil mixin.
-- @include <nama mixin>(<parameter>);

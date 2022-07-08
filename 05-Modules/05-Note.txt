@@ -1,0 +1,5 @@
+- @import 	~> Berfungsi untuk mengimport file partial dari sass.
+- @import ‘<nama file partial>’;
+
+- @use 		~> Berfungsi untuk mengimport file partial dari sass (recommended).
+- @use ‘<nama file partial>’ as <nama alias>;
